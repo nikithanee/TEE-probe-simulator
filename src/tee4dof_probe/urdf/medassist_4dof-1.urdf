@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<robot name="medassist_4dof" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Colors -->
+  <material name="grey"><color rgba="0.80 0.80 0.80 1.0"/></material>
+  <material name="darkgrey"><color rgba="0.35 0.35 0.35 1.0"/></material>
+  <material name="accent"><color rgba="0.90 0.90 0.95 1.0"/></material>
+
+  <!-- Fix base in the world (no world joint needed) -->
+  <gazebo reference="base_link">
+    <static>true</static>
+  </gazebo>
+
+  <!-- Base -->
+  <link name="base_link">
+    <visual>
+      <geometry><box size="0.12 0.12 0.04"/></geometry>
+      <material name="darkgrey"/>
+      <origin xyz="0 0 0.02" rpy="0 0 0"/>
+    </visual>
+    <collision>
+      <geometry><box size="0.12 0.12 0.04"/></geometry>
+      <origin xyz="0 0 0.02" rpy="0 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="1.5"/>
+      <origin xyz="0 0 0.02" rpy="0 0 0"/>
+      <inertia ixx="0.01" iyy="0.01" izz="0.01" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <!-- Handle -->
+  <link name="link1">
+    <visual>
+      <geometry><cylinder radius="0.0275" length="0.25"/></geometry>
+      <origin xyz="0 0 0.125" rpy="0 0 0"/>
+      <material name="grey"/>
+    </visual>
+    <collision>
+      <geometry><cylinder radius="0.0275" length="0.25"/></geometry>
+      <origin xyz="0 0 0.125" rpy="0 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="0.6"/>
+      <origin xyz="0 0 0.125" rpy="0 0 0"/>
+      <inertia ixx="0.003" iyy="0.003" izz="0.0015" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <joint name="joint1" type="revolute">
+    <parent link="base_link"/>
+    <child  link="link1"/>
+    <origin xyz="0 0 0.04" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <dynamics damping="2.0" friction="0.2"/>
+    <limit lower="-3.1416" upper="3.1416" velocity="1.5" effort="12.0"/>
+  </joint>
+
+  <!-- Neck -->
+  <link name="link2">
+    <visual>
+      <geometry><cylinder radius="0.019" length="0.35"/></geometry>
+      <origin xyz="0 0 0.175" rpy="0 0 0"/>
+      <material name="accent"/>
+    </visual>
+    <collision>
+      <geometry><cylinder radius="0.019" length="0.35"/></geometry>
+      <origin xyz="0 0 0.175" rpy="0 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="0.45"/>
+      <origin xyz="0 0 0.175" rpy="0 0 0"/>
+      <inertia ixx="0.0022" iyy="0.0022" izz="0.0010" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <joint name="joint2" type="revolute">
+    <parent link="link1"/>
+    <child  link="link2"/>
+    <origin xyz="0 0 0.25" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <dynamics damping="2.0" friction="0.2"/>
+    <limit lower="-1.5708" upper="1.5708" velocity="1.5" effort="10.0"/>
+  </joint>
+
+  <!-- Upper neck -->
+  <link name="link3">
+    <visual>
+      <geometry><cylinder radius="0.016" length="0.25"/></geometry>
+      <origin xyz="0 0 0.125" rpy="0 0 0"/>
+      <material name="accent"/>
+    </visual>
+    <collision>
+      <geometry><cylinder radius="0.016" length="0.25"/></geometry>
+      <origin xyz="0 0 0.125" rpy="0 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="0.35"/>
+      <origin xyz="0 0 0.125" rpy="0 0 0"/>
+      <inertia ixx="0.0014" iyy="0.0014" izz="0.0007" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <joint name="joint3" type="revolute">
+    <parent link="link2"/>
+    <child  link="link3"/>
+    <origin xyz="0 0 0.35" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <dynamics damping="2.5" friction="0.25"/>
+    <limit lower="-1.5708" upper="1.5708" velocity="1.5" effort="10.0"/>
+  </joint>
+
+  <!-- Tip -->
+  <link name="link4">
+    <visual>
+      <geometry><cylinder radius="0.014" length="0.10"/></geometry>
+      <origin xyz="0 0 0.05" rpy="0 0 0"/>
+      <material name="grey"/>
+    </visual>
+    <collision>
+      <geometry><cylinder radius="0.014" length="0.10"/></geometry>
+      <origin xyz="0 0 0.05" rpy="0 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="0.15"/>
+      <origin xyz="0 0 0.05" rpy="0 0 0"/>
+      <inertia ixx="0.0005" iyy="0.0005" izz="0.0003" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+
+    <visual>
+      <geometry><sphere radius="0.018"/></geometry>
+      <origin xyz="0 0 0.10" rpy="0 0 0"/>
+      <material name="darkgrey"/>
+    </visual>
+    <collision>
+      <geometry><sphere radius="0.018"/></geometry>
+      <origin xyz="0 0 0.10" rpy="0 0 0"/>
+    </collision>
+  </link>
+
+  <joint name="joint4" type="revolute">
+    <parent link="link3"/>
+    <child  link="link4"/>
+    <origin xyz="0 0 0.25" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <dynamics damping="2.5" friction="0.25"/>
+    <limit lower="-2.0" upper="2.0" velocity="2.0" effort="8.0"/>
+  </joint>
+
+  <!-- ros2_control joint mapping (REQUIRED) -->
+  <ros2_control name="MedAssistSystem" type="system">
+    <hardware>
+      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
+
+    <!-- Expose position commands + position/velocity state -->
+    <joint name="joint1">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="joint2">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="joint3">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    <joint name="joint4">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+  
+   <!-- Transmissions (required for ros2_control) -->
+  <transmission name="trans_joint1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint1">
+      <hardwareInterface>hardware_interface/PositionCommandInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor1">
+      <hardwareInterface>hardware_interface/PositionCommandInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="trans_joint2">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint2">
+      <hardwareInterface>hardware_interface/PositionCommandInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor2">
+      <hardwareInterface>hardware_interface/PositionCommandInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="trans_joint3">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint3">
+      <hardwareInterface>hardware_interface/PositionCommandInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor3">
+      <hardwareInterface>hardware_interface/PositionCommandInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="trans_joint4">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint4">
+      <hardwareInterface>hardware_interface/PositionCommandInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor4">
+      <hardwareInterface>hardware_interface/PositionCommandInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <gazebo>
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+      <robotNamespace>/tee4dof_probe</robotNamespace>
+      <robotSimType>gazebo_ros2_control/DefaultRobotHWSim</robotSimType>
+    </plugin>
+  </gazebo>
+ 
+</robot>
+
