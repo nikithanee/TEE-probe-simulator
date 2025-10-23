@@ -35,3 +35,9 @@ Key motion capabilities:
 - Axial rotation (θ₃): Rotate around backbone
 - Insertion/withdrawal (d₄): Translation
 This simulator aims to automate probe manipulation to improve safety and reduce human error during TEE procedures. It will form the foundation for autonomous navigation research in surgical robotics.
+
+## 👥 Credits
+
+Nikitha Neerupudi - Developer
+Afsah Asif Rashid (Supervisor) - AI Model & Guidance
+Other works and research by Ole Jakob Elle and Seyed MohammadReza Sajadi
