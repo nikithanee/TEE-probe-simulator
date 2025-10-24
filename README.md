@@ -1,6 +1,6 @@
 # TEE Probe Simulator – ROS2 | Gazebo
 
-A simulations enviroment for a Transoesophageal Echocardiography (TEE) probe modeled as a continuum manipulator. This project aims to enable autonomous control and safe navigation inside the oesophagus using AI-based control strategies, with future integration of a deep reinforcement learning model developed by my subervisor Afsah (as part of her master’s thesis work).
+A research-grade simulation of a Transoesophageal Echocardiography (TEE) probe modelled as a continuum manipulator in ROS2 + Gazebo, developed as part of autonomous probe navigation work.
 
 ![](https://github.com/nikithanee/TEE-probe-simulator/blob/main/Untitled%20design.gif)
 
@@ -10,18 +10,18 @@ A simulations enviroment for a Transoesophageal Echocardiography (TEE) probe mod
 
 The simulator currently loads a basic 4-DOF URDF model of the TEE probe in ROS2 + Gazebo Classic. We are working on configuring the ros2_control controllers for joint actuation and preparing for integration with AI-based motion planning.
 
-### ✅ Completed so far:
+### Completed so far:
 - URDF model of the TEE probe
 - Basic kinematic structure reflecting flexion and axial rotation
 - ROS2 workspace setup
 - Gazebo Classic launch with robot_state_publisher
   
-### 🔜 In Progress:
+###  In Progress:
 - Controller configuration and hardware interfaces
 - Joint control testing in simulation
 - Motion commands and teleoperation testing
   
-### 🎯 Upcoming Goals:
+### Upcoming Goals:
 - Train and deploy an AI agent to navigate the TEE probe
 - Implement reinforcement learning-based control
 - Integrate with visual guidance and safety constraints
@@ -38,6 +38,9 @@ This simulator aims to automate probe manipulation to improve safety and reduce 
 
 ## 👥 Credits
 
-Nikitha Neerupudi - Developer
-Afsah Asif Rashid (Supervisor) - AI Model & Guidance
-Other works and research by Ole Jakob Elle and Seyed MohammadReza Sajadi
+- Nikitha Neerupudi - Developer
+- Afsah Asif Rashid (Supervisor) - AI Model & Guidance
+- Other works and research by Ole Jakob Elle and Seyed MohammadReza Sajadi
+
+## Disclaimer 
+This simulation is strictly for research purposes. It is not for clinical use or real-patient deployment in its current state.
