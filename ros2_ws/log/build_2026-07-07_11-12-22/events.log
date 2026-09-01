@@ -1,0 +1,118 @@
+[0.000000] (-) TimerEvent: {}
+[0.000149] (-) JobUnselected: {'identifier': 'tee_robot_description'}
+[0.000172] (tee_probe) JobQueued: {'identifier': 'tee_probe', 'dependencies': OrderedDict()}
+[0.000188] (tee_probe) JobStarted: {'identifier': 'tee_probe'}
+[0.002281] (tee_probe) JobProgress: {'identifier': 'tee_probe', 'progress': 'cmake'}
+[0.060161] (tee_probe) Command: {'cmd': ['/usr/bin/cmake', '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/src/tee_probe', '-DCMAKE_INSTALL_PREFIX=/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe'], 'cwd': '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe', 'env': OrderedDict([('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/.singularity.d/libs'), ('HOME', '/uio/hume/student-u78/nikithan'), ('OLDPWD', '/uio/hume/student-u78/nikithan'), ('ROS_PYTHON_VERSION', '3'), ('PS1', 'Apptainer>'), ('APPTAINER_ENVIRONMENT', '/.singularity.d/env/91-environment.sh'), ('ROS_DISTRO', 'humble'), ('SINGULARITY_ENVIRONMENT', '/.singularity.d/env/91-environment.sh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('APPTAINER_COMMAND', 'shell'), ('APPTAINER_APPNAME', ''), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('APPTAINER_CONTAINER', '/uio/hume/student-u78/nikithan/tee_probe_full.sif'), ('APPTAINER_BIND', '/uio/hume/student-u78/nikithan'), ('SINGULARITY_CONTAINER', '/uio/hume/student-u78/nikithan/tee_probe_full.sif'), ('SINGULARITY_BIND', '/uio/hume/student-u78/nikithan'), ('PWD', '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe'), ('APPTAINER_NAME', 'tee_probe_full.sif'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SINGULARITY_NAME', 'tee_probe_full.sif'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.097747] (-) TimerEvent: {}
+[0.197948] (-) TimerEvent: {}
+[0.298229] (-) TimerEvent: {}
+[0.398524] (-) TimerEvent: {}
+[0.498809] (-) TimerEvent: {}
+[0.599132] (-) TimerEvent: {}
+[0.666424] (tee_probe) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.699235] (-) TimerEvent: {}
+[0.799519] (-) TimerEvent: {}
+[0.899890] (-) TimerEvent: {}
+[0.962937] (tee_probe) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.999961] (-) TimerEvent: {}
+[1.086252] (tee_probe) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.100035] (-) TimerEvent: {}
+[1.200279] (-) TimerEvent: {}
+[1.300562] (-) TimerEvent: {}
+[1.400879] (-) TimerEvent: {}
+[1.501161] (-) TimerEvent: {}
+[1.520249] (tee_probe) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.533844] (tee_probe) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.534238] (tee_probe) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.536071] (tee_probe) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.573563] (tee_probe) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.601270] (-) TimerEvent: {}
+[1.701565] (-) TimerEvent: {}
+[1.801866] (-) TimerEvent: {}
+[1.902150] (-) TimerEvent: {}
+[2.002430] (-) TimerEvent: {}
+[2.025387] (tee_probe) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.033380] (tee_probe) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.033911] (tee_probe) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.034712] (tee_probe) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.068190] (tee_probe) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.102537] (-) TimerEvent: {}
+[2.203069] (-) TimerEvent: {}
+[2.303345] (-) TimerEvent: {}
+[2.343443] (tee_probe) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.403442] (-) TimerEvent: {}
+[2.503718] (-) TimerEvent: {}
+[2.604007] (-) TimerEvent: {}
+[2.609718] (tee_probe) StdoutLine: {'line': b'-- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[2.612364] (tee_probe) StdoutLine: {'line': b'-- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[2.692591] (tee_probe) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.700113] (tee_probe) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.704090] (-) TimerEvent: {}
+[2.712570] (tee_probe) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.729179] (tee_probe) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.768273] (tee_probe) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.804197] (-) TimerEvent: {}
+[2.808708] (tee_probe) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.843974] (tee_probe) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.904293] (-) TimerEvent: {}
+[3.004569] (-) TimerEvent: {}
+[3.104902] (-) TimerEvent: {}
+[3.140701] (tee_probe) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.204956] (-) TimerEvent: {}
+[3.305261] (-) TimerEvent: {}
+[3.405551] (-) TimerEvent: {}
+[3.430211] (tee_probe) StdoutLine: {'line': b'-- Generating done\n'}
+[3.505658] (-) TimerEvent: {}
+[3.605942] (-) TimerEvent: {}
+[3.649238] (tee_probe) StdoutLine: {'line': b'-- Build files have been written to: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe\n'}
+[3.656225] (tee_probe) CommandEnded: {'returncode': 0}
+[3.656902] (tee_probe) JobProgress: {'identifier': 'tee_probe', 'progress': 'build'}
+[3.657612] (tee_probe) Command: {'cmd': ['/usr/bin/cmake', '--build', '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe', '--', '-j4', '-l4'], 'cwd': '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe', 'env': OrderedDict([('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/.singularity.d/libs'), ('HOME', '/uio/hume/student-u78/nikithan'), ('OLDPWD', '/uio/hume/student-u78/nikithan'), ('ROS_PYTHON_VERSION', '3'), ('PS1', 'Apptainer>'), ('APPTAINER_ENVIRONMENT', '/.singularity.d/env/91-environment.sh'), ('ROS_DISTRO', 'humble'), ('SINGULARITY_ENVIRONMENT', '/.singularity.d/env/91-environment.sh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('APPTAINER_COMMAND', 'shell'), ('APPTAINER_APPNAME', ''), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('APPTAINER_CONTAINER', '/uio/hume/student-u78/nikithan/tee_probe_full.sif'), ('APPTAINER_BIND', '/uio/hume/student-u78/nikithan'), ('SINGULARITY_CONTAINER', '/uio/hume/student-u78/nikithan/tee_probe_full.sif'), ('SINGULARITY_BIND', '/uio/hume/student-u78/nikithan'), ('PWD', '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe'), ('APPTAINER_NAME', 'tee_probe_full.sif'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SINGULARITY_NAME', 'tee_probe_full.sif'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.706057] (-) TimerEvent: {}
+[3.740671] (tee_probe) CommandEnded: {'returncode': 0}
+[3.742242] (tee_probe) JobProgress: {'identifier': 'tee_probe', 'progress': 'install'}
+[3.769241] (tee_probe) Command: {'cmd': ['/usr/bin/cmake', '--install', '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe'], 'cwd': '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe', 'env': OrderedDict([('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/.singularity.d/libs'), ('HOME', '/uio/hume/student-u78/nikithan'), ('OLDPWD', '/uio/hume/student-u78/nikithan'), ('ROS_PYTHON_VERSION', '3'), ('PS1', 'Apptainer>'), ('APPTAINER_ENVIRONMENT', '/.singularity.d/env/91-environment.sh'), ('ROS_DISTRO', 'humble'), ('SINGULARITY_ENVIRONMENT', '/.singularity.d/env/91-environment.sh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('APPTAINER_COMMAND', 'shell'), ('APPTAINER_APPNAME', ''), ('LANG', 'C.UTF-8'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('APPTAINER_CONTAINER', '/uio/hume/student-u78/nikithan/tee_probe_full.sif'), ('APPTAINER_BIND', '/uio/hume/student-u78/nikithan'), ('SINGULARITY_CONTAINER', '/uio/hume/student-u78/nikithan/tee_probe_full.sif'), ('SINGULARITY_BIND', '/uio/hume/student-u78/nikithan'), ('PWD', '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe'), ('APPTAINER_NAME', 'tee_probe_full.sif'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('SINGULARITY_NAME', 'tee_probe_full.sif'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.783379] (tee_probe) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.783560] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//launch\n'}
+[3.806284] (-) TimerEvent: {}
+[3.810239] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//launch/tee_simulation.launch.py\n'}
+[3.837322] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//launch/tee_training.launch.py\n'}
+[3.857438] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//config\n'}
+[3.869453] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//config/tee_controllers.yaml\n'}
+[3.906388] (-) TimerEvent: {}
+[3.907087] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//urdf\n'}
+[3.919167] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//urdf/tee_probe.urdf\n'}
+[3.937480] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts\n'}
+[3.949068] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/train_tee_probe.py\n'}
+[3.953465] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/drl_controller_node.py\n'}
+[3.957031] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/manual_control_node.py\n'}
+[3.975567] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/tee_probe_env.py\n'}
+[3.989034] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//models\n'}
+[3.993200] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/lib/tee_probe/drl_controller_node.py\n'}
+[4.006481] (-) TimerEvent: {}
+[4.018916] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/lib/tee_probe/tee_probe_env.py\n'}
+[4.048226] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/lib/tee_probe/train_tee_probe.py\n'}
+[4.062637] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/lib/tee_probe/manual_control_node.py\n'}
+[4.095470] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/ament_index/resource_index/package_run_dependencies/tee_probe\n'}
+[4.106590] (-) TimerEvent: {}
+[4.118083] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/ament_index/resource_index/parent_prefix_path/tee_probe\n'}
+[4.123422] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/environment/ament_prefix_path.sh\n'}
+[4.126597] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/environment/ament_prefix_path.dsv\n'}
+[4.172967] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/environment/path.sh\n'}
+[4.189352] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/environment/path.dsv\n'}
+[4.192332] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/local_setup.bash\n'}
+[4.206693] (-) TimerEvent: {}
+[4.214227] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/local_setup.sh\n'}
+[4.228413] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/local_setup.zsh\n'}
+[4.231674] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/local_setup.dsv\n'}
+[4.260790] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/package.dsv\n'}
+[4.284879] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/ament_index/resource_index/packages/tee_probe\n'}
+[4.306776] (-) TimerEvent: {}
+[4.318672] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/cmake/tee_probeConfig.cmake\n'}
+[4.322346] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/cmake/tee_probeConfig-version.cmake\n'}
+[4.342705] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/package.xml\n'}
+[4.366585] (tee_probe) CommandEnded: {'returncode': 0}
+[4.406865] (-) TimerEvent: {}
+[4.482093] (tee_probe) JobEnded: {'identifier': 'tee_probe', 'rc': 0}
+[4.500150] (-) EventReactorShutdown: {}

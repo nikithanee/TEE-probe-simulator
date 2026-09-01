@@ -1,0 +1,42 @@
+[0.064s] Invoking command in '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe': PS1=Apptainer> /usr/bin/cmake --build /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe -- -j4 -l4
+[0.689s] Invoked command in '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe' returned '0': PS1=Apptainer> /usr/bin/cmake --build /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe -- -j4 -l4
+[0.773s] Invoking command in '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe': PS1=Apptainer> /usr/bin/cmake --install /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe
+[0.826s] -- Install configuration: ""
+[0.835s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//launch
+[0.843s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//launch/tee_simulation.launch.py
+[0.845s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//launch/tee_training.launch.py
+[0.866s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//config
+[0.868s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//config/tee_controllers.yaml
+[0.876s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//urdf
+[0.888s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//urdf/tee_probe.urdf
+[0.925s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts
+[0.945s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/train_tee_probe.py
+[0.974s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/drl_controller_node.py
+[0.996s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/manual_control_node.py
+[1.040s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/tee_probe_env.py
+[1.075s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/__pycache__
+[1.118s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/__pycache__/tee_probe_env.cpython-310.pyc
+[1.160s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/__pycache__/trajectory_callback.cpython-310.pyc
+[1.196s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/train_tee_probe_with_plots.py
+[1.233s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/trajectory_callback.py
+[1.252s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//models
+[1.276s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/lib/tee_probe/drl_controller_node.py
+[1.326s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/lib/tee_probe/tee_probe_env.py
+[1.339s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/lib/tee_probe/train_tee_probe.py
+[1.369s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/lib/tee_probe/manual_control_node.py
+[1.432s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/ament_index/resource_index/package_run_dependencies/tee_probe
+[1.477s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/ament_index/resource_index/parent_prefix_path/tee_probe
+[1.494s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/environment/ament_prefix_path.sh
+[1.495s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/environment/ament_prefix_path.dsv
+[1.496s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/environment/path.sh
+[1.498s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/environment/path.dsv
+[1.499s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/local_setup.bash
+[1.500s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/local_setup.sh
+[1.505s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/local_setup.zsh
+[1.532s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/local_setup.dsv
+[1.534s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/package.dsv
+[1.569s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/ament_index/resource_index/packages/tee_probe
+[1.589s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/cmake/tee_probeConfig.cmake
+[1.602s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/cmake/tee_probeConfig-version.cmake
+[1.618s] -- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/package.xml
+[1.622s] Invoked command in '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe' returned '0': PS1=Apptainer> /usr/bin/cmake --install /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe

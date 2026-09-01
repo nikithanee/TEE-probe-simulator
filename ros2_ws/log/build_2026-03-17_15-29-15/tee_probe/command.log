@@ -1,0 +1,6 @@
+Invoking command in '/root/ros2_ws/build/tee_probe': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /root/ros2_ws/src/tee_probe -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/tee_probe
+Invoked command in '/root/ros2_ws/build/tee_probe' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /root/ros2_ws/src/tee_probe -DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/tee_probe
+Invoking command in '/root/ros2_ws/build/tee_probe': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/build/tee_probe -- -j8 -l8
+Invoked command in '/root/ros2_ws/build/tee_probe' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/build/tee_probe -- -j8 -l8
+Invoking command in '/root/ros2_ws/build/tee_probe': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/build/tee_probe
+Invoked command in '/root/ros2_ws/build/tee_probe' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/build/tee_probe

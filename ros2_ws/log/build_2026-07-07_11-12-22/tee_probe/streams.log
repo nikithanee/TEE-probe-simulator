@@ -1,0 +1,65 @@
+[0.097s] Invoking command in '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=Apptainer> /usr/bin/cmake /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/src/tee_probe -DCMAKE_INSTALL_PREFIX=/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe
+[0.666s] -- The C compiler identification is GNU 11.4.0
+[0.963s] -- The CXX compiler identification is GNU 11.4.0
+[1.086s] -- Detecting C compiler ABI info
+[1.520s] -- Detecting C compiler ABI info - done
+[1.534s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.534s] -- Detecting C compile features
+[1.536s] -- Detecting C compile features - done
+[1.573s] -- Detecting CXX compiler ABI info
+[2.025s] -- Detecting CXX compiler ABI info - done
+[2.033s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.034s] -- Detecting CXX compile features
+[2.035s] -- Detecting CXX compile features - done
+[2.068s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.343s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.610s] -- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)
+[2.612s] -- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+[2.693s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.700s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.712s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.729s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.768s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.809s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.844s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.141s] -- Configuring done
+[3.430s] -- Generating done
+[3.649s] -- Build files have been written to: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe
+[3.656s] Invoked command in '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=Apptainer> /usr/bin/cmake /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/src/tee_probe -DCMAKE_INSTALL_PREFIX=/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe
+[3.658s] Invoking command in '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=Apptainer> /usr/bin/cmake --build /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe -- -j4 -l4
+[3.741s] Invoked command in '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=Apptainer> /usr/bin/cmake --build /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe -- -j4 -l4
+[3.770s] Invoking command in '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=Apptainer> /usr/bin/cmake --install /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe
+[3.783s] -- Install configuration: ""
+[3.783s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//launch
+[3.810s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//launch/tee_simulation.launch.py
+[3.837s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//launch/tee_training.launch.py
+[3.857s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//config
+[3.869s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//config/tee_controllers.yaml
+[3.907s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//urdf
+[3.919s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//urdf/tee_probe.urdf
+[3.937s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts
+[3.949s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/train_tee_probe.py
+[3.953s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/drl_controller_node.py
+[3.957s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/manual_control_node.py
+[3.975s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/tee_probe_env.py
+[3.989s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//models
+[3.993s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/lib/tee_probe/drl_controller_node.py
+[4.019s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/lib/tee_probe/tee_probe_env.py
+[4.048s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/lib/tee_probe/train_tee_probe.py
+[4.063s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/lib/tee_probe/manual_control_node.py
+[4.095s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/ament_index/resource_index/package_run_dependencies/tee_probe
+[4.118s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/ament_index/resource_index/parent_prefix_path/tee_probe
+[4.123s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/environment/ament_prefix_path.sh
+[4.126s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/environment/ament_prefix_path.dsv
+[4.173s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/environment/path.sh
+[4.189s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/environment/path.dsv
+[4.192s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/local_setup.bash
+[4.214s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/local_setup.sh
+[4.228s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/local_setup.zsh
+[4.232s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/local_setup.dsv
+[4.261s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/package.dsv
+[4.285s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/ament_index/resource_index/packages/tee_probe
+[4.319s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/cmake/tee_probeConfig.cmake
+[4.322s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/cmake/tee_probeConfig-version.cmake
+[4.343s] -- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/package.xml
+[4.367s] Invoked command in '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=Apptainer> /usr/bin/cmake --install /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe

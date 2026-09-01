@@ -1,0 +1,4 @@
+Invoking command in '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe': PS1=Apptainer> /usr/bin/cmake --build /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe -- -j4 -l4
+Invoked command in '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe' returned '0': PS1=Apptainer> /usr/bin/cmake --build /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe -- -j4 -l4
+Invoking command in '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe': PS1=Apptainer> /usr/bin/cmake --install /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe
+Invoked command in '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe' returned '0': PS1=Apptainer> /usr/bin/cmake --install /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe

@@ -1,0 +1,50 @@
+[0.000000] (-) TimerEvent: {}
+[0.000950] (-) JobUnselected: {'identifier': 'tee_robot_description'}
+[0.001099] (tee_probe) JobQueued: {'identifier': 'tee_probe', 'dependencies': OrderedDict()}
+[0.001191] (tee_probe) JobStarted: {'identifier': 'tee_probe'}
+[0.039360] (tee_probe) JobProgress: {'identifier': 'tee_probe', 'progress': 'cmake'}
+[0.041416] (tee_probe) JobProgress: {'identifier': 'tee_probe', 'progress': 'build'}
+[0.042169] (tee_probe) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2_ws/build/tee_probe', '--', '-j8', '-l8'], 'cwd': '/root/ros2_ws/build/tee_probe', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'host.docker.internal:0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('PWD', '/root/ros2_ws/build/tee_probe'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.098857] (-) TimerEvent: {}
+[0.199792] (-) TimerEvent: {}
+[0.301802] (-) TimerEvent: {}
+[0.326361] (tee_probe) CommandEnded: {'returncode': 0}
+[0.330198] (tee_probe) JobProgress: {'identifier': 'tee_probe', 'progress': 'install'}
+[0.368897] (tee_probe) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ros2_ws/build/tee_probe'], 'cwd': '/root/ros2_ws/build/tee_probe', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('HOME', '/root'), ('OLDPWD', '/'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'host.docker.internal:0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('PWD', '/root/ros2_ws/build/tee_probe'), ('LC_ALL', 'C.UTF-8'), ('COLCON', '1')]), 'shell': False}
+[0.403505] (-) TimerEvent: {}
+[0.416926] (tee_probe) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.419097] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//launch\n'}
+[0.420290] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//launch/tee_simulation.launch.py\n'}
+[0.420733] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//launch/tee_training.launch.py\n'}
+[0.421060] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//config\n'}
+[0.421533] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//config/tee_controllers.yaml\n'}
+[0.421827] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//urdf\n'}
+[0.422452] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//urdf/tee_probe.urdf\n'}
+[0.422766] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts\n'}
+[0.423651] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts/train_tee_probe.py\n'}
+[0.423995] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts/drl_controller_node.py\n'}
+[0.424314] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts/manual_control_node.py\n'}
+[0.424605] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts/tee_probe_env.py\n'}
+[0.424899] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//models\n'}
+[0.425498] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/lib/tee_probe/drl_controller_node.py\n'}
+[0.425749] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/lib/tee_probe/tee_probe_env.py\n'}
+[0.426200] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/lib/tee_probe/train_tee_probe.py\n'}
+[0.426475] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/lib/tee_probe/manual_control_node.py\n'}
+[0.426974] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/ament_index/resource_index/package_run_dependencies/tee_probe\n'}
+[0.427378] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/ament_index/resource_index/parent_prefix_path/tee_probe\n'}
+[0.427750] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/environment/ament_prefix_path.sh\n'}
+[0.428093] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/environment/ament_prefix_path.dsv\n'}
+[0.428501] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/environment/path.sh\n'}
+[0.428854] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/environment/path.dsv\n'}
+[0.429245] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/local_setup.bash\n'}
+[0.429604] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/local_setup.sh\n'}
+[0.429956] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/local_setup.zsh\n'}
+[0.430359] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/local_setup.dsv\n'}
+[0.430854] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/package.dsv\n'}
+[0.433418] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/ament_index/resource_index/packages/tee_probe\n'}
+[0.433995] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/cmake/tee_probeConfig.cmake\n'}
+[0.434374] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/cmake/tee_probeConfig-version.cmake\n'}
+[0.434735] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/package.xml\n'}
+[0.440389] (tee_probe) CommandEnded: {'returncode': 0}
+[0.463690] (tee_probe) JobEnded: {'identifier': 'tee_probe', 'rc': 0}
+[0.464933] (-) EventReactorShutdown: {}

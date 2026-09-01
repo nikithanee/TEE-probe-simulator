@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<robot name="tee_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- =====================  PROPERTIES  ===================== -->
+  <xacro:property name="shaft_length" value="0.40"/>
+  <xacro:property name="shaft_radius" value="0.004"/>
+  <xacro:property name="tip_length"   value="0.025"/>
+  <xacro:property name="tip_radius"   value="0.006"/>
+
+  <xacro:property name="m_base"   value="0.50"/>
+  <xacro:property name="m_shaft"  value="0.16"/>
+  <xacro:property name="m_small"  value="0.02"/>
+  <xacro:property name="m_tip"    value="0.03"/>
+
+  <xacro:property name="pi" value="3.14159265359"/>
+
+  <material name="dark_grey">
+    <color rgba="0.2 0.2 0.2 1.0"/>
+  </material>
+
+  <!-- ========== GAZEBO ROS2_CONTROL PLUGIN (WORLD-LEVEL) ========== -->
+  <!-- Assumes you have a config file at: tee_robot_description/config/ros2_control.yaml -->
+<!--   <gazebo> -->
+<!--     <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so"> -->
+<!--       <parameters> -->
+<!--         $(find-pkg-share tee_robot_description)/config/ros2_control.yaml -->
+<!--       </parameters> -->
+<!--     </plugin> -->
+<!--   </gazebo> -->
+
+  <!-- =====================  LINKS  ===================== -->
+
+  <!-- BASE / HANDLE -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="${m_base}"/>
+      <inertia ixx="0.01" ixy="0.0" ixz="0.0"
+               iyy="0.01" iyz="0.0"
+               izz="0.01"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.10 0.04 0.03"/>
+      </geometry>
+      <material name="dark_grey"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.10 0.04 0.03"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Shaft roll frame -->
+  <link name="roll_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="${m_small}"/>
+      <inertia ixx="1e-4" ixy="0.0" ixz="0.0"
+               iyy="1e-4" iyz="0.0"
+               izz="1e-4"/>
+    </inertial>
+  </link>
+
+  <!-- INSERTION TUBE -->
+  <link name="shaft_link">
+    <inertial>
+      <origin xyz="0 0 ${shaft_length/2.0}" rpy="0 0 0"/>
+      <mass value="${m_shaft}"/>
+      <inertia ixx="0.0021" ixy="0.0" ixz="0.0"
+               iyy="0.0021" iyz="0.0"
+               izz="1.3e-6"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 ${shaft_length/2.0}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${shaft_radius}" length="${shaft_length}"/>
+      </geometry>
+      <material name="dark_grey"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 ${shaft_length/2.0}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${shaft_radius}" length="${shaft_length}"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- distal bending frames -->
+  <link name="yaw_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="${m_small}"/>
+      <inertia ixx="1e-4" ixy="0.0" ixz="0.0"
+               iyy="1e-4" iyz="0.0"
+               izz="1e-4"/>
+    </inertial>
+  </link>
+
+  <link name="tip_pitch_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="${m_small}"/>
+      <inertia ixx="1e-4" ixy="0.0" ixz="0.0"
+               iyy="1e-4" iyz="0.0"
+               izz="1e-4"/>
+    </inertial>
+  </link>
+
+  <!-- TIP / TRANSDUCER -->
+  <link name="tip_link">
+    <inertial>
+      <origin xyz="0 0 ${tip_length/2.0}" rpy="0 0 0"/>
+      <mass value="${m_tip}"/>
+      <inertia ixx="5e-4" ixy="0.0" ixz="0.0"
+               iyy="5e-4" iyz="0.0"
+               izz="5e-4"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 ${tip_length/2.0}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${tip_radius}" length="${tip_length}"/>
+      </geometry>
+      <material name="dark_grey"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 ${tip_length/2.0}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${tip_radius}" length="${tip_length}"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- ========== CONTACT / FRICTION PROPERTIES FOR LINKS ========== -->
+
+  <!-- Low friction shaft sliding in oesophagus -->
+  <gazebo reference="shaft_link">
+    <mu1>0.05</mu1>
+    <mu2>0.05</mu2>
+    <kp>5e5</kp>          <!-- contact stiffness -->
+    <kd>5e2</kd>          <!-- contact damping -->
+    <maxVel>0.2</maxVel>
+    <minDepth>0.001</minDepth>
+  </gazebo>
+
+  <!-- Slightly stickier tip (it presses the wall) -->
+  <gazebo reference="tip_link">
+    <mu1>0.3</mu1>
+    <mu2>0.3</mu2>
+    <kp>8e5</kp>
+    <kd>8e2</kd>
+    <maxVel>0.2</maxVel>
+    <minDepth>0.001</minDepth>
+
+    <!-- Example sensor attached at the tip -->
+    <sensor name="tip_imu" type="imu">
+      <always_on>true</always_on>
+      <update_rate>200.0</update_rate>
+      <visualize>false</visualize>
+      <pose>0 0 0 0 0 0</pose>
+      <plugin name="tip_imu_plugin" filename="libgazebo_ros_imu_sensor.so">
+        <ros>
+          <namespace>/tee_probe</namespace>
+          <remapping>~/imu:=tip_imu/data</remapping>
+        </ros>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <!-- =====================  JOINTS (with damping)  ===================== -->
+
+  <!-- θ3 roll -->
+  <joint name="joint_roll" type="continuous">
+    <parent link="base_link"/>
+    <child  link="roll_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="2.0" velocity="5.0"/>
+    <dynamics damping="0.05" friction="0.0"/>
+  </joint>
+
+  <!-- d4 insertion -->
+  <joint name="joint_insertion" type="prismatic">
+    <parent link="roll_link"/>
+    <child  link="shaft_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit lower="0.0" upper="0.35" effort="10.0" velocity="0.2"/>
+    <dynamics damping="5.0" friction="1.0"/>
+  </joint>
+
+  <!-- θ1 lateral bending -->
+  <joint name="joint_yaw" type="revolute">
+    <parent link="shaft_link"/>
+    <child  link="yaw_link"/>
+    <origin xyz="0 0 ${shaft_length}" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.0472" upper="1.0472" effort="2.0" velocity="1.0"/>
+    <dynamics damping="0.1" friction="0.0"/>
+  </joint>
+
+  <!-- θ2 ante/retro flexion -->
+  <joint name="joint_pitch" type="revolute">
+    <parent link="yaw_link"/>
+    <child  link="tip_pitch_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="-1.0472" upper="1.0472" effort="2.0" velocity="1.0"/>
+    <dynamics damping="0.1" friction="0.0"/>
+  </joint>
+
+  <!-- fixed from bending frame to actual tip geometry -->
+  <joint name="joint_tip_fixed" type="fixed">
+    <parent link="tip_pitch_link"/>
+    <child  link="tip_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- =====================  TRANSMISSIONS FOR ros2_control  ===================== -->
+
+  <transmission name="trans_roll">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="motor_roll">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="joint_roll"/>
+  </transmission>
+
+  <transmission name="trans_insertion">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="motor_insertion">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="joint_insertion"/>
+  </transmission>
+
+  <transmission name="trans_yaw">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="motor_yaw">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="joint_yaw"/>
+  </transmission>
+
+  <transmission name="trans_pitch">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="motor_pitch">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="joint_pitch"/>
+  </transmission>
+
+</robot>

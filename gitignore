@@ -1,0 +1,23 @@
+# ROS 2 / colcon build artifacts
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Training output
+logs/
+tensorboard/
+*.tar
+wandb/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp

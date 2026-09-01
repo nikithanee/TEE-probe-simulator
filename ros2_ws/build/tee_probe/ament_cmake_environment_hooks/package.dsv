@@ -1,0 +1,4 @@
+source;share/tee_probe/local_setup.bash
+source;share/tee_probe/local_setup.dsv
+source;share/tee_probe/local_setup.sh
+source;share/tee_probe/local_setup.zsh

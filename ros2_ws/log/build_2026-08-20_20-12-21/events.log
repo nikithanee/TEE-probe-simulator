@@ -1,0 +1,68 @@
+[0.000000] (-) TimerEvent: {}
+[0.000270] (-) JobUnselected: {'identifier': 'tee_robot_description'}
+[0.000293] (tee_probe) JobQueued: {'identifier': 'tee_probe', 'dependencies': OrderedDict()}
+[0.000307] (tee_probe) JobStarted: {'identifier': 'tee_probe'}
+[0.031961] (tee_probe) JobProgress: {'identifier': 'tee_probe', 'progress': 'cmake'}
+[0.046098] (tee_probe) JobProgress: {'identifier': 'tee_probe', 'progress': 'build'}
+[0.046825] (tee_probe) Command: {'cmd': ['/usr/bin/cmake', '--build', '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe', '--', '-j4', '-l4'], 'cwd': '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe', 'env': OrderedDict([('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/.singularity.d/libs'), ('HOME', '/uio/hume/student-u78/nikithan'), ('OLDPWD', '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws'), ('PS1', 'Apptainer>'), ('APPTAINER_ENVIRONMENT', '/.singularity.d/env/91-environment.sh'), ('ROS_DISTRO', 'humble'), ('SINGULARITY_ENVIRONMENT', '/.singularity.d/env/91-environment.sh'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('APPTAINER_COMMAND', 'shell'), ('APPTAINER_APPNAME', ''), ('LANG', 'C.UTF-8'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('APPTAINER_CONTAINER', '/uio/hume/student-u78/nikithan/tee_probe_full.sif'), ('APPTAINER_BIND', '/uio/hume/student-u78/nikithan'), ('SINGULARITY_CONTAINER', '/uio/hume/student-u78/nikithan/tee_probe_full.sif'), ('SINGULARITY_BIND', '/uio/hume/student-u78/nikithan'), ('PWD', '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe'), ('APPTAINER_NAME', 'tee_probe_full.sif'), ('LC_ALL', 'C.UTF-8'), ('SINGULARITY_NAME', 'tee_probe_full.sif'), ('COLCON', '1')]), 'shell': False}
+[0.099178] (-) TimerEvent: {}
+[0.199537] (-) TimerEvent: {}
+[0.299889] (-) TimerEvent: {}
+[0.400164] (-) TimerEvent: {}
+[0.500448] (-) TimerEvent: {}
+[0.600762] (-) TimerEvent: {}
+[0.689439] (tee_probe) CommandEnded: {'returncode': 0}
+[0.700839] (-) TimerEvent: {}
+[0.760466] (tee_probe) JobProgress: {'identifier': 'tee_probe', 'progress': 'install'}
+[0.773197] (tee_probe) Command: {'cmd': ['/usr/bin/cmake', '--install', '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe'], 'cwd': '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe', 'env': OrderedDict([('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/.singularity.d/libs'), ('HOME', '/uio/hume/student-u78/nikithan'), ('OLDPWD', '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws'), ('PS1', 'Apptainer>'), ('APPTAINER_ENVIRONMENT', '/.singularity.d/env/91-environment.sh'), ('ROS_DISTRO', 'humble'), ('SINGULARITY_ENVIRONMENT', '/.singularity.d/env/91-environment.sh'), ('_', '/usr/bin/colcon'), ('TERM', 'xterm-256color'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('APPTAINER_COMMAND', 'shell'), ('APPTAINER_APPNAME', ''), ('LANG', 'C.UTF-8'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('APPTAINER_CONTAINER', '/uio/hume/student-u78/nikithan/tee_probe_full.sif'), ('APPTAINER_BIND', '/uio/hume/student-u78/nikithan'), ('SINGULARITY_CONTAINER', '/uio/hume/student-u78/nikithan/tee_probe_full.sif'), ('SINGULARITY_BIND', '/uio/hume/student-u78/nikithan'), ('PWD', '/uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/build/tee_probe'), ('APPTAINER_NAME', 'tee_probe_full.sif'), ('LC_ALL', 'C.UTF-8'), ('SINGULARITY_NAME', 'tee_probe_full.sif'), ('COLCON', '1')]), 'shell': False}
+[0.800936] (-) TimerEvent: {}
+[0.826117] (tee_probe) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.834757] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//launch\n'}
+[0.843411] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//launch/tee_simulation.launch.py\n'}
+[0.844853] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//launch/tee_training.launch.py\n'}
+[0.865887] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//config\n'}
+[0.867854] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//config/tee_controllers.yaml\n'}
+[0.876315] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//urdf\n'}
+[0.888655] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//urdf/tee_probe.urdf\n'}
+[0.901020] (-) TimerEvent: {}
+[0.925234] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts\n'}
+[0.945225] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/train_tee_probe.py\n'}
+[0.974569] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/drl_controller_node.py\n'}
+[0.995861] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/manual_control_node.py\n'}
+[1.001109] (-) TimerEvent: {}
+[1.039847] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/tee_probe_env.py\n'}
+[1.075508] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/__pycache__\n'}
+[1.101217] (-) TimerEvent: {}
+[1.118204] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/__pycache__/tee_probe_env.cpython-310.pyc\n'}
+[1.160152] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/__pycache__/trajectory_callback.cpython-310.pyc\n'}
+[1.196482] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/train_tee_probe_with_plots.py\n'}
+[1.201290] (-) TimerEvent: {}
+[1.233067] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//scripts/trajectory_callback.py\n'}
+[1.252337] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe//models\n'}
+[1.276556] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/lib/tee_probe/drl_controller_node.py\n'}
+[1.301408] (-) TimerEvent: {}
+[1.326210] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/lib/tee_probe/tee_probe_env.py\n'}
+[1.339635] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/lib/tee_probe/train_tee_probe.py\n'}
+[1.369083] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/lib/tee_probe/manual_control_node.py\n'}
+[1.401503] (-) TimerEvent: {}
+[1.432588] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/ament_index/resource_index/package_run_dependencies/tee_probe\n'}
+[1.477288] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/ament_index/resource_index/parent_prefix_path/tee_probe\n'}
+[1.494232] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/environment/ament_prefix_path.sh\n'}
+[1.495394] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/environment/ament_prefix_path.dsv\n'}
+[1.496575] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/environment/path.sh\n'}
+[1.498007] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/environment/path.dsv\n'}
+[1.498874] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/local_setup.bash\n'}
+[1.499860] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/local_setup.sh\n'}
+[1.501567] (-) TimerEvent: {}
+[1.505689] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/local_setup.zsh\n'}
+[1.532543] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/local_setup.dsv\n'}
+[1.533907] (tee_probe) StdoutLine: {'line': b'-- Installing: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/package.dsv\n'}
+[1.568857] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/ament_index/resource_index/packages/tee_probe\n'}
+[1.589148] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/cmake/tee_probeConfig.cmake\n'}
+[1.601661] (-) TimerEvent: {}
+[1.601886] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/cmake/tee_probeConfig-version.cmake\n'}
+[1.618373] (tee_probe) StdoutLine: {'line': b'-- Up-to-date: /uio/hume/student-u78/nikithan/tee_probe_ws/ros2_ws/install/tee_probe/share/tee_probe/package.xml\n'}
+[1.622485] (tee_probe) CommandEnded: {'returncode': 0}
+[1.701748] (-) TimerEvent: {}
+[1.778140] (tee_probe) JobEnded: {'identifier': 'tee_probe', 'rc': 0}
+[1.780756] (-) EventReactorShutdown: {}

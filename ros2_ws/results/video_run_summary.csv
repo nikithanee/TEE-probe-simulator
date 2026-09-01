@@ -1,0 +1,9 @@
+view,repeat,success,steps,final_distance,min_distance,wall_time_s,timestamp
+mid_esophageal_4chamber,1,1,10,0.147967,0.147967,3.67,2026-08-20T20:26:42
+mid_esophageal_2chamber,1,1,5,0.128160,0.128160,2.00,2026-08-20T20:26:42
+mid_esophageal_long_axis,1,1,95,0.141920,0.141920,32.00,2026-08-20T20:26:42
+transgastric_short_axis,1,0,500,0.696154,0.263318,167.00,2026-08-20T20:26:42
+mid_esophageal_4chamber,2,1,5,0.144276,0.144276,2.00,2026-08-20T20:26:42
+mid_esophageal_2chamber,2,1,5,0.128160,0.128160,2.00,2026-08-20T20:26:42
+mid_esophageal_long_axis,2,1,95,0.141920,0.141920,32.00,2026-08-20T20:26:42
+transgastric_short_axis,2,0,500,0.696154,0.263318,167.00,2026-08-20T20:26:42

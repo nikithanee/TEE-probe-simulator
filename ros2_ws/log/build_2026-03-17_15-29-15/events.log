@@ -1,0 +1,129 @@
+[0.000000] (-) TimerEvent: {}
+[0.002979] (-) JobUnselected: {'identifier': 'tee_robot_description'}
+[0.003566] (tee_probe) JobQueued: {'identifier': 'tee_probe', 'dependencies': OrderedDict()}
+[0.003977] (tee_probe) JobStarted: {'identifier': 'tee_probe'}
+[0.067763] (tee_probe) JobProgress: {'identifier': 'tee_probe', 'progress': 'cmake'}
+[0.074265] (tee_probe) Command: {'cmd': ['/usr/bin/cmake', '/root/ros2_ws/src/tee_probe', '-DCMAKE_INSTALL_PREFIX=/root/ros2_ws/install/tee_probe'], 'cwd': '/root/ros2_ws/build/tee_probe', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'host.docker.internal:0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/install/tee_probe:/opt/ros/humble'), ('PWD', '/root/ros2_ws/build/tee_probe'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/install/tee_probe:/opt/ros/humble')]), 'shell': False}
+[0.097031] (-) TimerEvent: {}
+[0.197861] (-) TimerEvent: {}
+[0.298844] (-) TimerEvent: {}
+[0.401909] (-) TimerEvent: {}
+[0.509911] (-) TimerEvent: {}
+[0.612876] (-) TimerEvent: {}
+[0.713864] (-) TimerEvent: {}
+[0.780097] (tee_probe) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.814849] (-) TimerEvent: {}
+[0.915900] (-) TimerEvent: {}
+[1.024852] (-) TimerEvent: {}
+[1.125890] (-) TimerEvent: {}
+[1.228863] (-) TimerEvent: {}
+[1.328852] (tee_probe) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.329599] (-) TimerEvent: {}
+[1.373908] (tee_probe) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.430087] (-) TimerEvent: {}
+[1.531093] (-) TimerEvent: {}
+[1.637604] (-) TimerEvent: {}
+[1.741847] (-) TimerEvent: {}
+[1.846847] (-) TimerEvent: {}
+[1.947953] (-) TimerEvent: {}
+[2.048892] (-) TimerEvent: {}
+[2.157099] (-) TimerEvent: {}
+[2.265568] (-) TimerEvent: {}
+[2.276918] (tee_probe) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.304576] (tee_probe) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.306083] (tee_probe) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.306485] (tee_probe) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.312021] (tee_probe) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.365882] (-) TimerEvent: {}
+[2.470853] (-) TimerEvent: {}
+[2.575855] (-) TimerEvent: {}
+[2.680840] (-) TimerEvent: {}
+[2.781851] (-) TimerEvent: {}
+[2.882892] (-) TimerEvent: {}
+[2.983896] (-) TimerEvent: {}
+[3.086873] (-) TimerEvent: {}
+[3.144979] (tee_probe) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.171636] (tee_probe) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.173218] (tee_probe) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.173589] (tee_probe) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.186317] (tee_probe) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.188074] (-) TimerEvent: {}
+[3.294851] (-) TimerEvent: {}
+[3.401862] (-) TimerEvent: {}
+[3.502846] (-) TimerEvent: {}
+[3.603941] (-) TimerEvent: {}
+[3.706875] (-) TimerEvent: {}
+[3.807849] (-) TimerEvent: {}
+[3.908854] (-) TimerEvent: {}
+[4.009913] (-) TimerEvent: {}
+[4.110900] (-) TimerEvent: {}
+[4.172940] (tee_probe) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.211876] (-) TimerEvent: {}
+[4.318836] (-) TimerEvent: {}
+[4.420925] (-) TimerEvent: {}
+[4.462928] (tee_probe) StdoutLine: {'line': b'-- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[4.467830] (tee_probe) StdoutLine: {'line': b'-- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[4.512498] (tee_probe) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.518599] (tee_probe) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.524940] (-) TimerEvent: {}
+[4.529165] (tee_probe) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.544563] (tee_probe) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.565170] (tee_probe) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.601861] (tee_probe) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[4.625826] (-) TimerEvent: {}
+[4.654232] (tee_probe) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.726873] (-) TimerEvent: {}
+[4.831835] (-) TimerEvent: {}
+[4.916947] (tee_probe) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.932870] (-) TimerEvent: {}
+[4.945388] (tee_probe) StdoutLine: {'line': b'-- Generating done\n'}
+[4.969236] (tee_probe) StdoutLine: {'line': b'-- Build files have been written to: /root/ros2_ws/build/tee_probe\n'}
+[4.982126] (tee_probe) CommandEnded: {'returncode': 0}
+[4.982952] (tee_probe) JobProgress: {'identifier': 'tee_probe', 'progress': 'build'}
+[4.984015] (tee_probe) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ros2_ws/build/tee_probe', '--', '-j8', '-l8'], 'cwd': '/root/ros2_ws/build/tee_probe', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'host.docker.internal:0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/install/tee_probe:/opt/ros/humble'), ('PWD', '/root/ros2_ws/build/tee_probe'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/install/tee_probe:/opt/ros/humble')]), 'shell': False}
+[5.033868] (-) TimerEvent: {}
+[5.138846] (-) TimerEvent: {}
+[5.241858] (-) TimerEvent: {}
+[5.342869] (-) TimerEvent: {}
+[5.371033] (tee_probe) CommandEnded: {'returncode': 0}
+[5.376684] (tee_probe) JobProgress: {'identifier': 'tee_probe', 'progress': 'install'}
+[5.443973] (-) TimerEvent: {}
+[5.447384] (tee_probe) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ros2_ws/build/tee_probe'], 'cwd': '/root/ros2_ws/build/tee_probe', 'env': OrderedDict([('HOSTNAME', 'docker-desktop'), ('SHLVL', '1'), ('LIBGL_ALWAYS_SOFTWARE', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/root/ros2_ws'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/root/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'host.docker.internal:0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/root/ros2_ws/install/tee_probe:/opt/ros/humble'), ('PWD', '/root/ros2_ws/build/tee_probe'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/ros2_ws/install/tee_probe:/opt/ros/humble')]), 'shell': False}
+[5.529879] (tee_probe) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.532611] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//launch\n'}
+[5.535709] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//launch/tee_simulation.launch.py\n'}
+[5.541152] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//launch/tee_training.launch.py\n'}
+[5.543869] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//config\n'}
+[5.544361] (-) TimerEvent: {}
+[5.545836] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//config/tee_controllers.yaml\n'}
+[5.547896] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//urdf\n'}
+[5.548890] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//urdf/tee_probe.urdf\n'}
+[5.551352] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts\n'}
+[5.552316] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts/train_tee_probe.py\n'}
+[5.554307] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts/drl_controller_node.py\n'}
+[5.556647] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts/manual_control_node.py\n'}
+[5.558752] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts/tee_probe_env.py\n'}
+[5.561013] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//models\n'}
+[5.562533] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/lib/tee_probe/drl_controller_node.py\n'}
+[5.564519] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/lib/tee_probe/tee_probe_env.py\n'}
+[5.566412] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/lib/tee_probe/train_tee_probe.py\n'}
+[5.568762] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/lib/tee_probe/manual_control_node.py\n'}
+[5.571703] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/ament_index/resource_index/package_run_dependencies/tee_probe\n'}
+[5.574022] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/ament_index/resource_index/parent_prefix_path/tee_probe\n'}
+[5.576216] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/environment/ament_prefix_path.sh\n'}
+[5.578161] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/environment/ament_prefix_path.dsv\n'}
+[5.579976] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/environment/path.sh\n'}
+[5.581946] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/environment/path.dsv\n'}
+[5.583944] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/local_setup.bash\n'}
+[5.585967] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/local_setup.sh\n'}
+[5.588068] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/local_setup.zsh\n'}
+[5.590134] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/local_setup.dsv\n'}
+[5.592085] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/package.dsv\n'}
+[5.594407] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/ament_index/resource_index/packages/tee_probe\n'}
+[5.596720] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/cmake/tee_probeConfig.cmake\n'}
+[5.598406] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/cmake/tee_probeConfig-version.cmake\n'}
+[5.600459] (tee_probe) StdoutLine: {'line': b'-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/package.xml\n'}
+[5.611507] (tee_probe) CommandEnded: {'returncode': 0}
+[5.644889] (-) TimerEvent: {}
+[5.649754] (tee_probe) JobEnded: {'identifier': 'tee_probe', 'rc': 0}
+[5.651497] (-) EventReactorShutdown: {}

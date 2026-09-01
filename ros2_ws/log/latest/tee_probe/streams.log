@@ -1,0 +1,37 @@
+[0.047s] Invoking command in '/root/ros2_ws/build/tee_probe': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/build/tee_probe -- -j8 -l8
+[0.267s] Invoked command in '/root/ros2_ws/build/tee_probe' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /root/ros2_ws/build/tee_probe -- -j8 -l8
+[0.310s] Invoking command in '/root/ros2_ws/build/tee_probe': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/build/tee_probe
+[0.359s] -- Install configuration: ""
+[0.359s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//launch
+[0.360s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//launch/tee_simulation.launch.py
+[0.360s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//launch/tee_training.launch.py
+[0.360s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//config
+[0.361s] -- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//config/tee_controllers.yaml
+[0.363s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//urdf
+[0.364s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//urdf/tee_probe.urdf
+[0.364s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts
+[0.365s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts/train_tee_probe.py
+[0.365s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts/drl_controller_node.py
+[0.365s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts/manual_control_node.py
+[0.365s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts/tee_probe_env.py
+[0.366s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe//models
+[0.366s] -- Up-to-date: /root/ros2_ws/install/tee_probe/lib/tee_probe/drl_controller_node.py
+[0.366s] -- Up-to-date: /root/ros2_ws/install/tee_probe/lib/tee_probe/tee_probe_env.py
+[0.367s] -- Up-to-date: /root/ros2_ws/install/tee_probe/lib/tee_probe/train_tee_probe.py
+[0.367s] -- Up-to-date: /root/ros2_ws/install/tee_probe/lib/tee_probe/manual_control_node.py
+[0.367s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/ament_index/resource_index/package_run_dependencies/tee_probe
+[0.368s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/ament_index/resource_index/parent_prefix_path/tee_probe
+[0.368s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/environment/ament_prefix_path.sh
+[0.368s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/environment/ament_prefix_path.dsv
+[0.368s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/environment/path.sh
+[0.369s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/environment/path.dsv
+[0.369s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/local_setup.bash
+[0.370s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/local_setup.sh
+[0.370s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/local_setup.zsh
+[0.370s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/local_setup.dsv
+[0.371s] -- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/package.dsv
+[0.372s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/ament_index/resource_index/packages/tee_probe
+[0.373s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/cmake/tee_probeConfig.cmake
+[0.373s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/cmake/tee_probeConfig-version.cmake
+[0.373s] -- Up-to-date: /root/ros2_ws/install/tee_probe/share/tee_probe/package.xml
+[0.380s] Invoked command in '/root/ros2_ws/build/tee_probe' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /root/ros2_ws/build/tee_probe

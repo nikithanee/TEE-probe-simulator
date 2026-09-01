@@ -1,0 +1,38 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    insertion_controller:
+      type: position_controllers/JointGroupPositionController
+
+    axial_rotation_controller:
+      type: position_controllers/JointGroupPositionController
+
+    large_wheel_controller:
+      type: position_controllers/JointGroupPositionController
+
+    small_wheel_controller:
+      type: position_controllers/JointGroupPositionController
+
+insertion_controller:
+  ros__parameters:
+    joints:
+      - insertion_joint
+
+axial_rotation_controller:
+  ros__parameters:
+    joints:
+      - axial_rotation_joint
+
+large_wheel_controller:
+  ros__parameters:
+    joints:
+      - large_wheel_joint
+
+small_wheel_controller:
+  ros__parameters:
+    joints:
+      - small_wheel_joint

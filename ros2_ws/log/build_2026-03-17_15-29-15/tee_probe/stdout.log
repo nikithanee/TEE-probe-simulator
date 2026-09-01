@@ -1,0 +1,59 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)
+-- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/ros2_ws/build/tee_probe
+-- Install configuration: ""
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//launch
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//launch/tee_simulation.launch.py
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//launch/tee_training.launch.py
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//config
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//config/tee_controllers.yaml
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//urdf
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//urdf/tee_probe.urdf
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts/train_tee_probe.py
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts/drl_controller_node.py
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts/manual_control_node.py
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//scripts/tee_probe_env.py
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe//models
+-- Installing: /root/ros2_ws/install/tee_probe/lib/tee_probe/drl_controller_node.py
+-- Installing: /root/ros2_ws/install/tee_probe/lib/tee_probe/tee_probe_env.py
+-- Installing: /root/ros2_ws/install/tee_probe/lib/tee_probe/train_tee_probe.py
+-- Installing: /root/ros2_ws/install/tee_probe/lib/tee_probe/manual_control_node.py
+-- Installing: /root/ros2_ws/install/tee_probe/share/ament_index/resource_index/package_run_dependencies/tee_probe
+-- Installing: /root/ros2_ws/install/tee_probe/share/ament_index/resource_index/parent_prefix_path/tee_probe
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/environment/ament_prefix_path.sh
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/environment/ament_prefix_path.dsv
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/environment/path.sh
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/environment/path.dsv
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/local_setup.bash
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/local_setup.sh
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/local_setup.zsh
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/local_setup.dsv
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/package.dsv
+-- Installing: /root/ros2_ws/install/tee_probe/share/ament_index/resource_index/packages/tee_probe
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/cmake/tee_probeConfig.cmake
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/cmake/tee_probeConfig-version.cmake
+-- Installing: /root/ros2_ws/install/tee_probe/share/tee_probe/package.xml

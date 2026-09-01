@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>tee_robot_description</name>
+  <version>0.0.1</version>
+  <description>TEE robot URDF/xacro description package</description>
+  <maintainer email="nikitha@example.com">Nikitha</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+</package>

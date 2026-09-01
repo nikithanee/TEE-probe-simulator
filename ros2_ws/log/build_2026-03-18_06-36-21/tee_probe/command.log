@@ -1,0 +1,4 @@
+Invoking command in '/root/ros2_ws/build/tee_probe': /usr/bin/cmake --build /root/ros2_ws/build/tee_probe -- -j8 -l8
+Invoked command in '/root/ros2_ws/build/tee_probe' returned '0': /usr/bin/cmake --build /root/ros2_ws/build/tee_probe -- -j8 -l8
+Invoking command in '/root/ros2_ws/build/tee_probe': /usr/bin/cmake --install /root/ros2_ws/build/tee_probe
+Invoked command in '/root/ros2_ws/build/tee_probe' returned '0': /usr/bin/cmake --install /root/ros2_ws/build/tee_probe

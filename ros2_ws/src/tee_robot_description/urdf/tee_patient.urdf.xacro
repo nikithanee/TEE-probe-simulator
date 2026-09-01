@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<robot name="tee_patient" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Esophagus dimensions -->
+  <xacro:property name="eso_length" value="0.40"/>   <!-- 40 cm -->
+  <xacro:property name="eso_radius" value="0.015"/>  <!-- 15 mm -->
+
+  <!-- Simple material -->
+  <material name="tissue">
+    <color rgba="0.9 0.7 0.7 0.6"/>  <!-- semi-transparent pink -->
+  </material>
+
+  <!-- Single link representing the esophagus tube -->
+  <link name="esophagus_link">
+    <inertial>
+      <!-- make it light; it’s static anyway -->
+      <origin xyz="0 0 ${eso_length/2.0}" rpy="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia ixx="1e-3" ixy="0.0" ixz="0.0"
+               iyy="1e-3" iyz="0.0"
+               izz="1e-3"/>
+    </inertial>
+
+    <!-- visual: vertical cylinder, z up -->
+    <visual>
+      <origin xyz="0 0 ${eso_length/2.0}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${eso_radius}" length="${eso_length}"/>
+      </geometry>
+      <material name="tissue"/>
+    </visual>
+
+    <!-- collision: same as visual -->
+    <collision>
+      <origin xyz="0 0 ${eso_length/2.0}" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="${eso_radius}" length="${eso_length}"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Gazebo settings: make it static + tissue-like friction -->
+  <gazebo reference="esophagus_link">
+    <static>true</static>
+    <!-- more friction than the shaft so it “grips” a bit -->
+    <mu1>0.6</mu1>
+    <mu2>0.6</mu2>
+    <kp>5e5</kp>
+    <kd>5e2</kd>
+    <maxVel>0.2</maxVel>
+    <minDepth>0.001</minDepth>
+  </gazebo>
+
+</robot>
