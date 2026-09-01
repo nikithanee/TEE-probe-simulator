@@ -6,6 +6,9 @@ A TEE probe is a flexible ultrasound device inserted through the esophagus durin
 
 Developed as research at **Rikshospitalet, The Intervention Centre** (Oslo University Hospital) in collaboration with the **University of Oslo**.
 
+<img width="800" height="366" alt="ScreenRecording2026-08-14at18 36 29-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/7ccc7fba-6e6d-4317-b8d5-1ad9d224350a" />
+
+
 ---
 
 ## Kinematics
